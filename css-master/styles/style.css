@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #96c1f8;
+}
+
+header{
+    height: 100px;
+}
+section{
+    background-image:url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+  
+section :nth-child(3){
+    color: gray;
+ }
+
+section div:hover{
+    border-radius: 100%;
+    background-color: black;
+    transition: 0.5s;
+    rotate: 360;
+}
+
+footer{
+    height: 250px;
+    background-color: #5ee1e6;
+}
+
+h1{
+    text-align: center;
+    color: antiquewhite;
+}
+
+#bateau{ 
+    position: absolute;
+    left: 0px;
+    bottom: 120px;
+    animation: bateau1 8s forwards;
+}
+
+@keyframes bateau1{
+    from{
+        left: 0px;
+        bottom: 120px;
+    }
+    
+    to{
+        left:500px;
+        bottom:120px;
+    }
+}
+
+section div{ 
+    width: 100px;
+    height: 100px;
+    color: #80cee1;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: normal;
+    font-family: 'Trebuchet MS';
+    font-size: 18px;
+}
+#tresor{
+    margin: auto;
+    display: block;
+    cursor: grab;
+}
